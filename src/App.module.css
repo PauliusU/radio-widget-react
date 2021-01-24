@@ -1,0 +1,37 @@
+.App {
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px 0;
+    background: #2f2f3a;
+}
+
+.list {
+    padding: 0;
+}
+
+.listItem {
+    border-bottom: 2px solid #3f3f49;
+    list-style: none;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listItem p {
+    /*.stationName {*/
+    /*font-size: 24px;*/
+    font-weight: normal;
+}
+
+/*.stationFrequency {*/
+.listItem span {
+    font-weight: 900;
+    /*font-size: 24px;*/
+    /*font-size: 32px;*/
+    /*font-size: 50px;*/
+}
+
+.listItem:last-child {
+    border-bottom: none;
+}

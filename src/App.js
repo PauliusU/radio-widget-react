@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import {Layout} from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <Layout>
+          <ul className={styles.list}>
+              <li className={styles.listItem}>
+                  <p className={styles.stationName}>Putin FM</p>
+                  {/*<p placeholder={styles.stationFrequency}>66,6</p>*/}
+                  <span>101,2</span>
+              </li>
+              <li className={styles.listItem}>
+                  <p>Dribble FM</p>
+                  <span>101,2</span>
+              </li>
+          </ul>
+      </Layout>
     </div>
   );
 }
