@@ -1,7 +1,8 @@
 .App {
     width: 320px;
     border-radius: 20px;
-    box-shadow: 5px 10px 20px 0;
+    box-shadow: 0 60px 40px -40px;
+
     background: #2f2f3a;
 }
 
@@ -19,17 +20,11 @@
 }
 
 .listItem p {
-    /*.stationName {*/
-    /*font-size: 24px;*/
     font-weight: normal;
 }
 
-/*.stationFrequency {*/
 .listItem span {
     font-weight: 900;
-    /*font-size: 24px;*/
-    /*font-size: 32px;*/
-    /*font-size: 50px;*/
 }
 
 .listItem:last-child {
