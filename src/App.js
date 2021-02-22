@@ -1,23 +1,24 @@
-import styles from "./App.module.css";
-import { Layout } from "./components";
+import styles from './App.module.css';
+import {Layout} from './components';
+import stations from './stations';
 
 function App() {
-    return (
-        <div className={styles.App}>
-            <Layout>
-                <ul className={styles.list}>
-                    <li className={styles.listItem}>
-                        <p>Putin FM</p>
-                        <span>101,2</span>
-                    </li>
-                    <li className={styles.listItem}>
-                        <p>Dribble FM</p>
-                        <span>101,2</span>
-                    </li>
-                </ul>
-            </Layout>
-        </div>
-    );
+  return (
+    <div className={styles.App}>
+      <Layout>
+        <ul className={styles.list}>
+          {stations.map((station, index) => {
+            return (
+              <li className={styles.listItem} key={index}>
+                <p>{station.name}</p>
+                <span>{station.frequency}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </Layout>
+    </div>
+  );
 }
 
 export default App;

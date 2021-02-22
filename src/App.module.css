@@ -1,32 +1,32 @@
 .App {
-    width: 320px;
-    border-radius: 20px;
-    box-shadow: 0 60px 40px -40px;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 60px 40px -40px;
 
-    background: #2f2f3a;
+  background: #2f2f3a;
 }
 
 .list {
-    padding: 0;
+  padding: 0;
 }
 
 .listItem {
-    border-bottom: 2px solid #3f3f49;
-    list-style: none;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  border-bottom: 2px solid #3f3f49;
+  list-style: none;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .listItem p {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .listItem span {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .listItem:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
